@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeepFreeze.NewDrink"
+             Title="Add New Drink">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <!-- Drink Name Entry -->
+        <Entry x:Name="DrinkNameEntry" Placeholder="Enter drink name" />
+
+        <!-- Drink Amount Entry -->
+        <Entry x:Name="DrinkAmountEntry" Placeholder="Enter amount" Keyboard="Numeric" />
+
+        <!-- Add Drink Button -->
+        <Button Text="Add Drink" Clicked="OnAddDrinkClicked" />
+    </VerticalStackLayout>
+</ContentPage>
+

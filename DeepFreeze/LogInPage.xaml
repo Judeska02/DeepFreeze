@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeepFreeze.LogInPage"
+             Title="LogInPage"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+
+        <VerticalStackLayout
+            Spacing = "20"
+            Padding = "30,0"
+            VerticalOptions = "Center">
+
+            <Frame
+                BackgroundColor ="Black"
+                Padding= "24"
+                CornerRadius= "20">
+                <Label Text="Inlogscherm"
+                       TextColor="Blue"
+                       FontSize="36"
+                       HorizontalOptions="Center"/>
+            </Frame>
+
+            <Label />
+            <Label />
+
+            <Label 
+                x:Name="UsernameLabel"
+                Text="Username:"
+                HorizontalOptions="Center"/>
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Your username here!"
+                HorizontalOptions="Center"/>
+            <Label
+                x:Name="PasswordLabel"
+                Text="Password:"
+                HorizontalOptions="Center"/>
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Your password here!"
+                HorizontalOptions="Center"
+                IsPassword="True"/>
+            <Button
+                x:Name="LogInButton"
+                Text="Log In"
+                Clicked="LogInButton_Clicked"
+                Margin="0,40,0,0"
+                TextColor="White"
+                HorizontalOptions="Center"
+                BackgroundColor="Blue"
+                FontSize="18"
+                HeightRequest="80"
+                WidthRequest="160"/>
+
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>
